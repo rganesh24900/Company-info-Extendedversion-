@@ -1,5 +1,5 @@
 package com.company;
-
+import java.util.*;
 public class Main {
 
     public static void main(String[] args) {
@@ -21,17 +21,39 @@ public class Main {
     e3.empType="Full-time";
     e3.SalaryBand= e3.level3;
 
-    System.out.println("First Engineer's name:"+e1.name);
-    System.out.println("First Engineer's employee type:"+e1.empType);
-    System.out.println("First Engineer's SalaryBand:"+e1.SalaryBand);
+        System.out.println("Engineer1's Information:");
+    List<String> eng1 = new ArrayList<String>();
+    eng1.add(e1.name);
+    eng1.add(e1.empType);
+    eng1.add(String.valueOf(e1.SalaryBand));
 
-    System.out.println("Second Engineer's Name:"+e2.name);
-    System.out.println("Second Engineer's employee type:"+e2.empType);
-    System.out.println("Second Engineers Salary:"+e2.SalaryBand);
 
-    System.out.println("Third Engineer's name:"+e3.name);
-    System.out.println("Third Engineer's employee type:"+e3.empType);
-    System.out.println("Third Engineer's Salary:"+e3.SalaryBand);
+     for (String i :eng1){
+
+         System.out.println(i);
+     }
+        System.out.println("Engineer2's Information:");
+     List<String> eng2 = new ArrayList<String>();
+        eng2.add(e2.name);
+        eng2.add(e2.empType);
+        eng2.add(String.valueOf(e2.SalaryBand));
+
+        for (String j : eng2){
+
+            System.out.println(j);
+        }
+        System.out.println("Engineer3's Information:");
+     List<String> eng3 = new ArrayList<String>();
+        eng3.add(e3.name);
+        eng3.add(e3.empType);
+        eng3.add(String.valueOf(e3.SalaryBand));
+
+        for (String k : eng3){
+
+            System.out.println(k);
+        }
+
+
 
     //Manager's
         Manager m1 = new Manager();
@@ -50,18 +72,37 @@ public class Main {
         m3.empType="Full-time";
         m3.SalaryBand= m3.level2;
 
-        System.out.println("First Manager's name:"+m1.name);
-        System.out.println("First Manager's employee type:"+m1.empType);
-        System.out.println("First Manager's SalaryBand:"+m1.SalaryBand);
+        System.out.println("Manager1's Information:");
+        List<String> man1 = new ArrayList<String>();
+        man1.add(m1.name);
+        man1.add(m1.empType);
+        man1.add(String.valueOf(m1.SalaryBand));
 
-        System.out.println("Second Manager's Name:"+m2.name);
-        System.out.println("Second Manager's employee type:"+m2.empType);
-        System.out.println("Second Managers Salary:"+m2.SalaryBand);
 
-        System.out.println("Third Manager's name:"+m3.name);
-        System.out.println("Third Manager's employee type:"+m3.empType);
-        System.out.println("Third Manager's Salary:"+m3.SalaryBand);
+        for (String a :man1){
 
+            System.out.println(a);
+        }
+        System.out.println("Manager2's Information:");
+        List<String> man2 = new ArrayList<String>();
+        man2.add(m2.name);
+        man2.add(m2.empType);
+        man2.add(String.valueOf(m2.SalaryBand));
+
+        for (String b : man2){
+
+            System.out.println(b);
+        }
+        System.out.println("Manager3's Information:");
+        List<String> man3 = new ArrayList<String>();
+        man3.add(m3.name);
+        man3.add(m3.empType);
+        man3.add(String.valueOf(m3.SalaryBand));
+
+        for (String c : man3){
+
+            System.out.println(c);
+        }
         //CTC
         float ctc = e1.SalaryBand+ e2.SalaryBand+ e3.SalaryBand+ m1.SalaryBand+ m2.SalaryBand+ m3.SalaryBand;
         System.out.println("The CTC of the company is:"+ctc);
