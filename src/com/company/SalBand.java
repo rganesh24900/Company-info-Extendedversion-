@@ -1,6 +1,6 @@
 package com.company;
 
-public class SalBand extends Employee {
+public class SalBand  {
 
         int engineerLevel1 = 20000;
         int engineerLevel2 = 40000;
@@ -10,6 +10,9 @@ public class SalBand extends Employee {
         int managerLevel1 = 15000;
         int managerLevel2 = 30000;
         int managerLevel3 = 45000;
+
+
+
 
 
 }
